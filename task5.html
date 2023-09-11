@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+    display: grid;   
+    grid-template-rows: repeat(12,auto);
+    grid-template-columns: repeat(2,auto);     
+  padding: 0px;
+  margin-left:200px;
+  border: 1px solid;
+  width: 70%;
+}
+input[type="text"]{
+    width: 100%;
+}
+
+
+.label{
+    
+    
+    border: 1px solid;
+    
+}
+.outer{
+    margin-left:200px;
+  border: 1px solid;
+  width: 70%;
+
+}
+.outer2{
+    margin-left:200px;
+  border: 1px solid;
+  width: 70%;
+    text-align: right;
+}
+
+    </style>
+</head>
+<body>
+   <center> <h1 style="color: blue;">Registration form</h1></center>
+   
+   <div class="container">
+    <div class="label">
+   <label for="fname"><b>First Name</b></label></div>
+     <div class="label"> <input type="text" id="fname" name="fname" size="10"><br></div>
+      <div class="label"><label for="lname"><b>Last Name</b></label></div>
+      <div class="label"> <input type="text" id="fname" name="fname" size="10" ><br></div>
+      <div class="label"> <label for="email"><b>Email</b></label></div>
+      <div class="label">  <input type="text" id="fname" name="fname" size="10"><br></div>
+         <div class="label"><label for="pw"><b>Password</b></label></div>
+         <div class="label">  <input type="text" id="pw" name="pw" size="10"><br></div>
+        <div class="label"><label for="repw"><b>Re-enter Password</b></label></div>
+        <div class="label">  <input type="text" id="pw" name="pw" size="10"><br></div>
+        <div class="label"> <label for="gn"><b>Gender:</b></label></div>
+        <div class="label">  <input type="radio" name="male"/> Male <br>  
+            
+            <div class="label"> <input type="radio" name="male"/> Female <br> </div> </div>
+
+      
+     <div class="label">  <label for="address"><b>Address:</b></label></div>
+     <div class="label">  <textarea cols="80" rows="5" value="address">  </textarea></div>
+     <div class="label">  <label for="state"><b>State:</b></label></div>
+     <div class="label">  <input type="text" id="state" name="state" size="9"><br></div>
+     <div class="label">  <label for="country"><b>Country:</b></label></div>
+     <div class="label">  <select id="country">
+  <option value="volvo">Choose your country</option>
+  <option value="saab">China</option>
+  <option value="opel">Australia</option>
+  <option value="audi">India</option>
+</select></div>
+<div class="label">  <label for="Language"><b>Languages known</b></label></div>
+    <div class="label"> 
+         <input type="checkbox" id="l1" name="l1" value="English">
+           <label for="l1">English</label>
+  <input type="checkbox" id="l2" name="l2" value="kanada">
+  <label for="l2"> Kannada</label>
+  <input type="checkbox" id="l3" name="l3" value="kanada">
+  <label for="l3"> Hindi</label><input type="checkbox" id="l3" name="l3" value="kanada">
+  <label for="l4"> Telugu</label>
+</div>
+
+</div>
+<div class="outer">
+<input type="checkbox" id="l4" name="l4" value="k">Hereby I declare all the given details are true  </div>
+<div class="outer2">Log in to <a href="">Ethnus</a>website</div>
+<center><button type="register" form="form1" value="register">Register</button></center>
+</body>
+</html>
